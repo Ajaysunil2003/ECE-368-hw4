@@ -1,5 +1,0 @@
-open 1
-open 2
-switch 3
-close 2
-close 1

@@ -1,0 +1,7 @@
+open 1
+open 2
+open 3
+switch 2
+close 1
+close 3
+close 2

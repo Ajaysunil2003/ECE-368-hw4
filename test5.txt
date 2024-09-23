@@ -1,0 +1,11 @@
+open 1
+open 2
+open 3
+open 4
+switch 2
+switch 1
+switch 4
+close 3
+close 2
+close 1
+close 4

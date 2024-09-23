@@ -15,8 +15,8 @@ WindowNode* closeWindow(WindowNode* head, int currID);
 
 
 
-//function to create new windownode for adding 
-WindowNode* addNode(int id){
+//function to create new windownode 
+WindowNode* createNode(int id){
     WindowNode* newNode = (WindowNode*)malloc(sizeof(WindowNode)); //malloc
     if (newNode == NULL) {
         fprintf(stderr, "Malloc failed\n");
@@ -50,7 +50,7 @@ void processInputs(WindowNode** head) {
 //function for if it says "open" 
 WindowNode* openWindow(WindowNode* head, int currID) {
     //take the currID and add it to the front of the newlist 
-    WindowNode* newNode = addNode(currID);
+    WindowNode* newNode = createNode(currID);
     newNode->next = head;
     printf("%d\n", currID);
     return newNode;
